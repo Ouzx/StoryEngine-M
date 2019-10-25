@@ -121,15 +121,9 @@
   <data name="Başlıksız-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Başlıksız-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image-1200x675" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image-1200x675.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mian" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Mian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+ 
+ 
+
   <data name="Başlıksız-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Başlıksız-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

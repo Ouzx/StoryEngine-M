@@ -63,16 +63,6 @@ namespace StoryEngine_M.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap b {
-            get {
-                object obj = ResourceManager.GetObject("b", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap Başlıksız_1 {
             get {
                 object obj = ResourceManager.GetObject("Başlıksız-1", resourceCulture);
@@ -86,26 +76,6 @@ namespace StoryEngine_M.Properties {
         internal static System.Drawing.Bitmap Başlıksız_11 {
             get {
                 object obj = ResourceManager.GetObject("Başlıksız-11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap image_1200x675 {
-            get {
-                object obj = ResourceManager.GetObject("image-1200x675", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
-        internal static System.Drawing.Bitmap Mian {
-            get {
-                object obj = ResourceManager.GetObject("Mian", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
