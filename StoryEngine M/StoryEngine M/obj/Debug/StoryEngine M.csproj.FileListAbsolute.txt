@@ -1,0 +1,14 @@
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\bin\Debug\StoryEngine M.exe.config
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\bin\Debug\StoryEngine M.exe
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\bin\Debug\StoryEngine M.pdb
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.csprojAssemblyReference.cache
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine_M.Form1.resources
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine_M.Properties.Resources.resources
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.csproj.GenerateResource.cache
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.csproj.CoreCompileInputs.cache
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.exe
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.pdb
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine_M.Form2.resources
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\bin\Debug\Control.Draggable.dll
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine M.csproj.CopyComplete
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\obj\Debug\StoryEngine_M.Form3.resources
