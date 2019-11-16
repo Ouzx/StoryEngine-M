@@ -1,0 +1,3 @@
+Gerekli klasör kurulumlarını projenin debug dosyası içindeki Paths metin dosyası içinde yapabilirsin.
+/**/
+1-)Hikayeninin kaydedileceği konum.

@@ -35,12 +35,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -108,27 +113,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 102);
+            this.label3.Location = new System.Drawing.Point(16, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Sol Metin:";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "0"});
-            this.comboBox1.Location = new System.Drawing.Point(70, 29);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(216, 21);
-            this.comboBox1.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(6, 32);
+            this.label4.Location = new System.Drawing.Point(6, 42);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 7;
@@ -137,50 +132,107 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(12, 23);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(343, 157);
+            this.groupBox1.Size = new System.Drawing.Size(343, 235);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(22, 201);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 13);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "StoryNo:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(76, 151);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(216, 44);
+            this.textBox4.TabIndex = 9;
+            this.textBox4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox4_KeyDown);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(76, 201);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(96, 20);
+            this.textBox5.TabIndex = 11;
+            this.textBox5.Text = "1";
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox5_KeyPress);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(42, 164);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(24, 13);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "EK:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(6, 59);
+            this.label5.Location = new System.Drawing.Point(6, 69);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Sound:";
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "0"});
-            this.comboBox2.Location = new System.Drawing.Point(70, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(216, 21);
-            this.comboBox2.TabIndex = 9;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.checkBox1);
+            this.groupBox2.Controls.Add(this.comboBox1);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.comboBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 186);
+            this.groupBox2.Location = new System.Drawing.Point(12, 253);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(343, 93);
+            this.groupBox2.Size = new System.Drawing.Size(343, 107);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(76, 69);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(216, 21);
+            this.comboBox2.TabIndex = 12;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(76, 19);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 17);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.Text = "Mekan Kartı";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(76, 42);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(216, 21);
+            this.comboBox1.TabIndex = 11;
             // 
             // checkedListBox2
             // 
@@ -214,7 +266,7 @@
             this.groupBox3.Controls.Add(this.button5);
             this.groupBox3.Controls.Add(this.checkedListBox3);
             this.groupBox3.Controls.Add(this.checkedListBox2);
-            this.groupBox3.Location = new System.Drawing.Point(12, 285);
+            this.groupBox3.Location = new System.Drawing.Point(12, 366);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(343, 168);
             this.groupBox3.TabIndex = 15;
@@ -319,7 +371,7 @@
             // button1
             // 
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(53, 459);
+            this.button1.Location = new System.Drawing.Point(53, 540);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(274, 35);
             this.button1.TabIndex = 16;
@@ -330,7 +382,7 @@
             // button3
             // 
             this.button3.ForeColor = System.Drawing.Color.Red;
-            this.button3.Location = new System.Drawing.Point(257, 500);
+            this.button3.Location = new System.Drawing.Point(257, 581);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(70, 35);
             this.button3.TabIndex = 18;
@@ -341,17 +393,18 @@
             // button4
             // 
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(53, 500);
+            this.button4.Location = new System.Drawing.Point(53, 581);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(96, 35);
             this.button4.TabIndex = 19;
             this.button4.Text = "Kaydet";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button2
             // 
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(155, 500);
+            this.button2.Location = new System.Drawing.Point(155, 581);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 35);
             this.button2.TabIndex = 17;
@@ -362,7 +415,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.Gray;
-            this.button7.Location = new System.Drawing.Point(18, 459);
+            this.button7.Location = new System.Drawing.Point(18, 540);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(20, 20);
             this.button7.TabIndex = 31;
@@ -375,7 +428,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(367, 551);
+            this.ClientSize = new System.Drawing.Size(367, 632);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -408,11 +461,9 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.TextBox textBox3;
         public System.Windows.Forms.Label label3;
-        public System.Windows.Forms.ComboBox comboBox1;
         public System.Windows.Forms.Label label4;
         public System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.Label label5;
-        public System.Windows.Forms.ComboBox comboBox2;
         public System.Windows.Forms.GroupBox groupBox2;
         public System.Windows.Forms.CheckedListBox checkedListBox2;
         public System.Windows.Forms.CheckedListBox checkedListBox3;
@@ -433,5 +484,12 @@
         public System.Windows.Forms.CheckedListBox checkedListBox1;
         public System.Windows.Forms.Button button6;
         public System.Windows.Forms.Button button7;
+        public System.Windows.Forms.Label label14;
+        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Label label15;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.CheckBox checkBox1;
     }
 }

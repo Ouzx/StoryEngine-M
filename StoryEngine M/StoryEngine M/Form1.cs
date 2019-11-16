@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace StoryEngine_M
 {
@@ -24,9 +25,13 @@ namespace StoryEngine_M
             frm3 = new Form3();
             frm1 = this;
             frm2.Show();
-            ControlExtension.Draggable(frm2,true);
+            ControlExtension.Draggable(frm2, true);
             ControlExtension.Draggable(frm3, true);
             timer2.Start();
+            Save.tempPath = Save.paths[3] + @"\" + Guid.NewGuid().ToString() + ".txt";
+            using (File.Create(Save.tempPath)) { }
+
+
         }
 
         public List<Card> cards = new List<Card>();
@@ -40,14 +45,14 @@ namespace StoryEngine_M
             if(CardCounter == 0)
             {
                 _card = new Card(frm2.textBox1.Text, frm2.textBox2.Text, frm2.textBox3.Text,
-                                Convert.ToInt32(frm2.comboBox1.SelectedItem), Convert.ToInt32(frm2.comboBox2.SelectedItem),
-                                new Point(-8,219), CardCounter);
+                                frm2.comboBox1.SelectedIndex,frm2.comboBox2.SelectedIndex,
+                                new Point(-8,219), CardCounter,frm2.textBox4.Text,Convert.ToInt32(frm2.textBox5.Text),frm2.checkBox1.Checked);
             }
             else
             {
                 _card = new Card(frm2.textBox1.Text, frm2.textBox2.Text, frm2.textBox3.Text,
-                                Convert.ToInt32(frm2.comboBox1.SelectedItem), Convert.ToInt32(frm2.comboBox2.SelectedItem),
-                                SelectedCard.ButtonCard.Location, CardCounter);
+                                frm2.comboBox1.SelectedIndex, frm2.comboBox2.SelectedIndex,
+                                SelectedCard.ButtonCard.Location, CardCounter,frm2.textBox4.Text, Convert.ToInt32(frm2.textBox5.Text), frm2.checkBox1.Checked);
             }
             SelectedCard = _card;
             groupBox1.Controls.Add(_card.ButtonCard);
@@ -68,6 +73,9 @@ namespace StoryEngine_M
             SelectedCard.RightText = frm2.textBox3.Text;
             SelectedCard.SpriteID = frm2.comboBox1.SelectedIndex;
             SelectedCard.SoundID = frm2.comboBox2.SelectedIndex;
+            SelectedCard.TEXT = frm2.textBox4.Text;
+            SelectedCard.StoryNO = Convert.ToInt32(frm2.textBox5.Text);
+            SelectedCard.isPlace = frm2.checkBox1.Checked;
             EditList();
             CheckList();
             
@@ -192,6 +200,7 @@ namespace StoryEngine_M
                     frm3.richTextBox1.AppendText(i.ToString() + "  nolu kartın sağ bağlantısı yok! \n");
                 }
             }
+            
             
         }
 

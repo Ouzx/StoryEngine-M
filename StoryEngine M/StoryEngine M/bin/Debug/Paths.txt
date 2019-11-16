@@ -1,0 +1,4 @@
+C:\Users\oguzh\Desktop\STRY.txt
+C:\Users\oguzh\Documents\GitHub\Merlin-The-Last-Wizard-Of-Camelot\Merlin\Assets\CardSprites
+C:\Users\oguzh\Documents\GitHub\Merlin-The-Last-Wizard-Of-Camelot\Merlin\Assets\Sounds
+C:\Users\oguzh\Documents\GitHub\StoryEngine-M\StoryEngine M\StoryEngine M\bin\Debug\Temps

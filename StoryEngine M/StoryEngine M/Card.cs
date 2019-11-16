@@ -21,23 +21,27 @@ namespace StoryEngine_M
         public static byte OFFSET_Y = 29;
         public static byte WIDTH = 66;
         public static byte HEIGHT = 23;
+        public int StoryNO { get; set; }
         public int NO { get; set; }
         public string MainText { get; set; }
         public string LeftText { get; set; }
         public string RightText { get; set; }
         public int SpriteID { get; set; }
         public int SoundID { get; set; }
+        public bool isPlace { get; set; }
         public Point LastCardPos { get; set; }
         public int Counter { get; set; }
         public Button ButtonCard { get; set; }
+        public string TEXT { get; set; }
 
         public Card(string _main, string _left, string _right,
                     int _sprite, int _sound,
-                    Point _lastCardPos, int _counter)
+                    Point _lastCardPos, int _counter,string _text,int _storyNO, bool _isPlace)
         {
             MainText = _main; LeftText = _left; RightText = _right;
-            SpriteID = _sprite; SoundID = _sprite;
+            SpriteID = _sprite; SoundID = _sound;
             LastCardPos = _lastCardPos; Counter = _counter;
+            TEXT = _text; StoryNO = _storyNO; isPlace = _isPlace;
             CreateButton();
         }
 
@@ -63,9 +67,11 @@ namespace StoryEngine_M
             Form1.frm2.textBox1.Text = MainText;
             Form1.frm2.textBox2.Text = LeftText;
             Form1.frm2.textBox3.Text = RightText;
-
+            Form1.frm2.textBox4.Text = TEXT;
             Form1.frm2.comboBox1.SelectedIndex = SpriteID;
             Form1.frm2.comboBox2.SelectedIndex = SoundID;
+            Form1.frm2.textBox5.Text = StoryNO.ToString();
+            Form1.frm2.checkBox1.Checked = isPlace;
             
                 if(LeftNext != null)Form1.frm2.label7.Text = LeftNext.ButtonCard.Name;
                 if(RightNext != null) Form1.frm2.label8.Text = RightNext.ButtonCard.Name;
