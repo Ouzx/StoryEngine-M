@@ -74,11 +74,13 @@ namespace StoryEngine_M
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
+            textBox6.Text = "";
             label7.Text = "";
             label8.Text = "";
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
             checkBox1.Checked = false;
+            checkBox2.Checked = false;
             for(int i = 0; i < checkedListBox2.Items.Count; i++)
             {
                 checkedListBox2.SetItemChecked(i, false);
@@ -147,6 +149,15 @@ namespace StoryEngine_M
             {
                 this.ActiveControl = button7;
             }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                textBox6.Enabled = true;
+            }
+            else textBox6.Enabled = false;
         }
     }
 }

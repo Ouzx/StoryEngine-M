@@ -28,7 +28,8 @@ namespace StoryEngine_M
             ControlExtension.Draggable(frm2, true);
             ControlExtension.Draggable(frm3, true);
             timer2.Start();
-            Save.tempPath = Save.paths[3] + @"\" + Guid.NewGuid().ToString() + ".txt";
+
+            Save.tempPath = @AppDomain.CurrentDomain.BaseDirectory+"Temps" + @"\" + Guid.NewGuid().ToString() + ".txt";
             using (File.Create(Save.tempPath)) { }
 
 
@@ -45,14 +46,16 @@ namespace StoryEngine_M
             if(CardCounter == 0)
             {
                 _card = new Card(frm2.textBox1.Text, frm2.textBox2.Text, frm2.textBox3.Text,
-                                frm2.comboBox1.SelectedIndex,frm2.comboBox2.SelectedIndex,
-                                new Point(-8,219), CardCounter,frm2.textBox4.Text,Convert.ToInt32(frm2.textBox5.Text),frm2.checkBox1.Checked);
+                                frm2.comboBox1.SelectedIndex, frm2.comboBox2.SelectedIndex,
+                                new Point(-8, 219), CardCounter, frm2.textBox4.Text, Convert.ToInt32(frm2.textBox5.Text),
+                                frm2.checkBox1.Checked, frm2.checkBox2.Checked, frm2.textBox6.Text);
             }
             else
             {
                 _card = new Card(frm2.textBox1.Text, frm2.textBox2.Text, frm2.textBox3.Text,
                                 frm2.comboBox1.SelectedIndex, frm2.comboBox2.SelectedIndex,
-                                SelectedCard.ButtonCard.Location, CardCounter,frm2.textBox4.Text, Convert.ToInt32(frm2.textBox5.Text), frm2.checkBox1.Checked);
+                                SelectedCard.ButtonCard.Location, CardCounter,frm2.textBox4.Text, Convert.ToInt32(frm2.textBox5.Text),
+                                frm2.checkBox1.Checked, frm2.checkBox2.Checked, frm2.textBox6.Text);
             }
             SelectedCard = _card;
             groupBox1.Controls.Add(_card.ButtonCard);
@@ -76,6 +79,8 @@ namespace StoryEngine_M
             SelectedCard.TEXT = frm2.textBox4.Text;
             SelectedCard.StoryNO = Convert.ToInt32(frm2.textBox5.Text);
             SelectedCard.isPlace = frm2.checkBox1.Checked;
+            SelectedCard.isComment = frm2.checkBox2.Checked;
+            SelectedCard.Comment = frm2.textBox6.Text;
             EditList();
             CheckList();
             
